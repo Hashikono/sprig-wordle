@@ -1,6 +1,6 @@
 /*
 @title: wordle
-@description: ""
+@description: "A sprig port of the popular game Worldle"
 @author: hashikono
 @tags: ['puzzle']
 @addedOn: 2025-00-00
@@ -1118,7 +1118,7 @@ a : left
 s : right
 d : down
 
-i : start/nextLevel
+i : start/next Level
 j : choose
 k : 
 l : enter
@@ -1175,7 +1175,7 @@ onInput("j", () => {
       if (getTile(i, inputCol).length > 1) {
         //console.log(getTile(i,inputCol)[0].type);
         // I don't understand why, you don't understand why...
-        // (whoever coded this loves 2d/3d arrays)
+        // (whoever coded this(sprig) loves 2d/3d arrays)
         getTile(i, inputCol)[0].remove();
       }
       //string -> tile
